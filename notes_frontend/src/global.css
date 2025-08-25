@@ -1,0 +1,37 @@
+/**
+ * Global base styles and typography for the app.
+ * Light theme with modern, minimalistic look.
+ * Colors are configured in routes/styles.css; here we define typography and resets.
+ */
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #0b1020;
+  line-height: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
