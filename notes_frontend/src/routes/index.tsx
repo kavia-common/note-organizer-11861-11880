@@ -1,21 +1,20 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { useNavigate } from "@builder.io/qwik-city";
 
 // PUBLIC_INTERFACE
 export default component$(() => {
-  return (
-    <div class="page-container">
-      <h1 class="main-title">notes_frontend is being generated</h1>
-    </div>
-  );
+  const nav = useNavigate();
+  useVisibleTask$(async () => {
+    await nav("/notes");
+  });
+  return null;
 });
 
 export const head: DocumentHead = {
-  title: "notes_frontend",
+  title: "Notes Organizer",
   meta: [
-    {
-      name: "description",
-      content: "Ultralight Qwik template",
-    },
+    { name: "description", content: "A modern, minimalistic notes organizer." },
+    { name: "theme-color", content: "#4f8cff" },
   ],
 };

@@ -1,15 +1,11 @@
 /**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles for the ultralight Qwik template.
- * Uses a minimalistic light theme with specified color scheme.
+ * Global base styles and typography for the app.
+ * Light theme with modern, minimalistic look.
+ * Colors are configured in routes/styles.css; here we define typography and resets.
  */
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: #0078d4;
-  --background-color: #ffffff;
+  color-scheme: light;
 }
 
 html {
@@ -31,8 +27,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  background: #ffffff;
+  color: #0b1020;
   line-height: inherit;
 }
 
